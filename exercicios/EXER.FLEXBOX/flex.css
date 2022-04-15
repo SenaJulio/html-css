@@ -1,0 +1,14 @@
+.item{
+    margin: 5px;
+    background-color: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+
+.container{
+    max-width: 400px;
+    margin: 0 auto;
+    border: 3px solid #ccc;
+}

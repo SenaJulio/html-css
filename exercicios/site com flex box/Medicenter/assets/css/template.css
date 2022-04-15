@@ -1,0 +1,288 @@
+body{
+   margin: 0;
+}
+header{
+   display: flex;
+   justify-content: center;
+   
+}
+.container{
+display: flex;
+  width:990px;
+ 
+ 
+ justify-content: space-between;
+}
+.logo{
+   display: flex;
+   align-items:center;
+   }
+.menu{
+   /*
+   display flex para que os elementos fiquem flexiveis e align-items center para centraliza-los.
+   */
+  display: flex;
+  align-items: center;
+   
+   
+}
+nav ul,
+nav li{
+   /*
+   retirar todos pontinhos da lista com list-style none.
+   */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul{
+   /* 
+   para que todos elementos fiquem um ao lado do outro.
+   */
+   display: flex;
+   
+}
+
+ nav a{
+    /*
+    estilização do link= fonte da letra com font family,cor da letra, espaço interno com padding, comportamento em bloco com display block,tirar o sublinhado com o text decoration none.
+    */
+    
+   text-decoration: none;
+   padding: 15px;
+   display: block;
+   text-transform: uppercase;
+   color: #727272;
+   font-family: arial;
+}
+nav .active a,
+ nav a:hover{
+    /*
+    para deixar um dos menus ativa com a class active e quando passar o mouse ativar com o hover deixando a letra de outra cor com color.
+    */
+background-color: #39aae1;
+color:white;
+}
+#banner{
+   display:flex;
+   justify-content: center;
+   background-image: url('../imges/img1.jpg');
+   background-position: center;
+   background-size: cover;/*em tela grande a image vai expandir para ocupar toda area e em tela pequena a imagem também diminuirá se adapatando a tela.*/
+   height: 670px;
+
+} 
+.container{
+   display: flex;
+}
+.column{
+   flex-direction: column;
+}
+.banner_headline{
+  flex: 1;
+
+}
+.banner_options{
+   display: flex;
+   height: 270px;
+  
+}
+#banner h1{
+   font-size: 70px;
+   color: #fff;
+   width: 300px;
+   margin: 0;
+   padding: 0;
+   text-shadow: 0px 2px 0px #555;
+   margin-top: 30px;
+   margin-bottom: 20px;
+}
+#banner h2{
+   font-size: 22px;
+   color: #fff;
+   width: 300px;
+   margin: 0;
+   padding: 0;
+}
+
+.banner1,
+.banner2,
+.banner3{
+   
+   flex: 1;
+   padding: 20px;
+   color: #fff;
+   
+   }
+.banner1{
+background-color: #39aae1;
+}
+.banner2{
+background-color: #0079c7;
+}
+.banner3{
+   background-color: #2b4c99;
+}
+.banner_title{
+   
+   font-size: 21px;
+}
+.banner_desc{
+   font-size: 15px;
+  margin-top: 20px;
+   margin-bottom: 20px;
+}
+.banner_options a {
+   display: inline-block;
+   text-decoration:none;
+   border: 1px solid #fff;
+   padding: 10px;
+   color: #fff;
+   font-size:15px ;
+}
+
+.banner_hours{
+  display:flex ;
+justify-content:space-between;
+border-bottom: 1px solid #6666;
+/*no banner hours fazer três divs com dois <p> dentro de cada.
+usar o display flex para que fique um ao lado do outro e o justify-content:space-between para o espaçamento e border-bottom para linhas em baixo*/
+   
+  }
+  #geral{
+     display: flex;
+     justify-content: center;
+  }
+  section{
+     flex: 2;
+  }
+  aside{
+     flex: 1;
+  }
+  .widget_title{
+   margin-top: 30px;
+   margin-bottom: 20px;
+   margin-right:50px ;
+     font-size: 21px;
+     font-weight: bold;
+  }
+  .widget_title_bar{
+     width: 50px;
+     height: 2px;
+     background-color: #39aae1;
+     margin-top: 10px;
+  }
+  .Blocks{
+     display: flex;
+     flex-wrap: wrap;
+  justify-content: space-between;
+  }
+  .block{
+     width: 150px;
+     height: 150px;
+     margin-right: 10px;
+     margin-top: 20px;
+     background-color: #39aae1;
+
+  }
+  article{
+     flex: 1;
+     min-width:300px;
+     margin-right:20px ;
+  }
+  .flex{
+     display:flex;
+     flex-wrap:wrap;
+  }
+  article a{
+     text-decoration: none;
+  }
+  article .news_data{
+     display: flex;
+  }
+  article .news_posted_at{
+     background-color: #2b4c99;
+     color: #ffffff;
+     font-size: 12px;
+     padding: 10px;
+     margin-right: 2px;
+
+  }
+  article .news_comments{
+     background-color: #39aae1;
+     color: #ffffff;
+     font-size: 12px;
+     padding: 10px;
+  }
+  article .news_thumbnail{
+     margin-top: 30px;
+     
+  }
+  article .news_thumbnail img{
+     width: 100%;
+     height: auto;
+  }
+  article .news_title{
+     margin-top:25px;
+     margin-bottom:25px;
+     color: #000000;
+     font-size: 23px;
+         
+  }
+  article .news_resume{
+     color: #5c5c5c;
+     line-height:20px;
+     font-size: 14px;
+  }
+  .news_appointment1{
+     border-bottom: 1px solid #555;
+     margin-bottom: 20px;
+  }
+  footer{
+     display: flex;
+     justify-content: center;
+    background-color:#1e1e1e;
+   
+  }
+  .footer_menu{
+   display: flex;
+ 
+   
+  }
+.fm_1,
+.fm_2,
+.fm_3{
+flex:1;
+padding: 10px;
+color: #fff;
+}
+.fm_1{
+   background-color: #39aae1;
+   }
+   .fm_2{
+   background-color: #0079c7;
+   }
+   .fm_3{
+   background-color: #2b4c99;
+
+     }
+     .footer_title{
+        font-size: 21px;
+     }
+     .footer_desc{
+    font-size: 15px;
+     margin-top: 20px;
+      margin-bottom: 20px;
+     }
+     .containercolumn{
+      flex-direction: column;
+     }
+     .footer_area{
+        display: flex;
+        flex:1;
+     }
+     .footer_areaitem{
+        color: #fff;
+        flex: 1;
+     }
+     

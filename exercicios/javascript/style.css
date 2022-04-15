@@ -1,0 +1,32 @@
+body{
+    height: 5000PX;
+}
+
+
+.azul{
+    background-color: #0000ff;
+    color: #fff;
+    }
+.vermelho{
+    background-color: #ff0000;
+    color: #fff;
+}
+.verde{
+    background-color: #00ff00;
+}
+#telefone{
+    display:none;
+}
+.scrollbutton{
+    width:40px;
+    height:40px ;
+    background-color:red;
+    border-radius: 20px;
+   position: fixed;
+    right:10px ;
+   bottom:10px;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+
+}

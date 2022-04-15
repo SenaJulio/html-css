@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+  <style>
+      body{
+          margin: 40px;
+          
+      }
+      Label{
+          display: block;
+          margin-bottom: 20px;
+      }
+      input[type=text],textarea,select {
+          padding: 10px;
+          width: 500px;
+          font-size: 15px;
+          border: 1px solid #ccc;
+          outline: 0;
+          margin-top: 5px;
+      }
+      textarea{
+          height: 200px;
+          resize: none;
+      }
+      button{
+          border: 1px solid #ccc;
+          padding: 10px;
+          font-size: 15px;
+          background-color: #eee;
+      }
+      button:hover{
+          background-color: red;
+      }
+      fieldset{
+          background-color: #eee;
+          margin-bottom: 20px;
+      }
+  </style>
+</head>
+<body>
+    Para construimos formulários utilizaremos a tag <mark>Form</mark><br><br>
+    Dentro da Tag <mark>Form</mark> colocamos dois atributos:<br><br>
+   1. <h1>action</h1>onde se coloca o local para onde será enviado as informações.<br><br>
+   2. <h1>Method</h1>metodo de envio, que são dois= Post e Get.<br><br>
+   Get= pega as infromaçoes e coloca na URL da pagina.<br><br>
+   Post= as informções ficam internamente.<br><br>
+    Todo formulario que for criado teremos botar grupos para ele..<br><br>
+    Area de cadastro.<br><br>
+    Area de Login.<br><br>
+
+    <h2>Área de cadastro</h2>
+    <form action="pagins/login.html" method="Post">
+
+        <input type="text" name="usuario" value="123"/><br>
+        <input type="email" name="email" value="aqui"/><br>
+        <input type="password" name="password" value="senha"/><br>
+        <input type="radio" name="radio" value="escolha"/>
+        <input type="radio" name="radio" value="escolha"/><br>
+        <input type="checkbox" name="checkbox" value="marcar"/><br>
+        <input type="submit" name="submit" value="fazer cadastro"/><br><br>
+        Podemos colocar também a Tag <mark>Select</mark> que Apresenta uma menu de opções no qual o usuário pode escolher apenas um item.<br><br>
+        No <mark>select</mark> colocamos o atributo <mark>name</mark><br><br>
+        No <mark>option</mark> colocamos o atributo <mark>value</mark><br><br>
+        <select value >
+            <option>mais vendios</option>
+            <option>recentes</option>
+        </select><br><br>
+        Podemos usar também o <h1>textarea</h1> tem que colocar um name dentro dele..
+        <textarea></textarea><br><br>
+        Podemos usar também a Tag <h1>button</h1>,
+        para fazer botões de envio.<br><br>
+        <button>Pode me enviar</button>
+
+    </form>
+    <h2>Área de Login</h2>
+    <form>
+        <input type="color" name="usuario" value="123"/><br>
+        <input type="datetime-local" name="email" value="aqui"/><br>
+        <input type="date" name="password" value="senha"/><br>
+        <input type="month" name="radio" value="escolha"/>
+        <input type="number" name="radio" value="escolha"/><br>
+        <input type="range" name="checkbox" value="marcar"/><br>
+        <input type="search" name="submit" value="fazer cadastro"/><br>
+        <input type="tel" name="submit" value="fazer cadastro"/><br>
+        <input type="time" name="submit" value="fazer cadastro"/><br>
+        <input type="url" name="submit" value="fazer cadastro"/><br>
+        <input type="week" name="submit" value="fazer cadastro"/><br>
+    </form>r><br><br>
+    A Tag <mark>Label</mark> utilizamos  quando queremos definir quando digitar nome,email etc..<br></br>. 
+    Colocar o atributo <mark>For</mark> dentro de label e um <mark>id</mark> dentro do input para selecionar uma área especifica.<br><br></br>
+    <label>
+    Nome completo: <br>
+    <input type="text" name="nome" id="nome"/>
+   </label>
+    <br><br>
+    
+    <label>
+    <input type="checkbox" id="teste"/>
+    declaro que li e aceito os termos de uso.
+    </label>
+
+    <label>
+        Descrição:<br>
+        <textarea name="descricao"></textarea>
+    </label><br><br>
+
+ <label>
+     Categoria:<br>
+     <select name="categoria">
+        <option value="1">Categoria 1</option>
+        <option value="2">Categoria 2</option>
+        <option value="3">Categoria 3</option>
+        <option value="4">Categoria 4</option>
+        <option value="5">Categoria 5</option>
+     </select>
+ </label>
+ <form method="Post">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+ <label>
+     Primeiro Nome:<br>
+     <input type="text" name="name"/>
+ </label><br>
+ <label>
+    Sobrenome:<br>
+    <input type="text" name="lastname"/>
+</label>
+</fieldset>
+<label>
+    Foto:<br>
+    <input type="file" name="photo" accept="image/*"/>
+</label>
+</fieldset>
+
+<fieldset>
+    <legend>Dados Profissionais</legend>
+<label>
+    Nome da empresa:<br>
+    <input type="text" name="companyname"/>
+</label>
+<label>
+   Cargo na empresa:<br>
+   <input type="text" name="companyjobtitle"/>
+</label>
+</fieldset>
+ 
+<input type="submit" value="cadastrar">
+
+ </form>
+ Usando as Tags <mark>fildset</mark> e <mark>legend</mark> nos ajuda a organizar nosso formulário. Fildset é um conjuto de campos.<br><br>
+ Para fazer a validação do nosso formulário faremos a validação nativa.<br><br>
+ 1.validação <mark>Required</mark>.<br><br>
+ 2.validação <mark>minlength</mark>. <br><br>
+ 3.validação <mark>maxlength</mark>.<br><br>
+ 4.validação <mark>step</mark> pula de 2 em 2.<br><br>
+ 5.validação <mark>min="2" e max="3" para numeros</mark>.<br><br>
+ 6.validação <mark>email pattern</mark>.<br><br>
+ 7.validação <mark>maxlength</mark>.<br><br>
+ Coloque o <mark>Required</mark> em todos campos.<br><br>
+ campo extremamente importante= <h2>Input type hidden</h2>
+ <br>
+ serve para identificar o pais que o usuário se encontra.<br><br>
+ Para enviar arquivo junto com seu documentos utilizamos <h2>Input type file</h2>
+ Sempre que for enviar um arquivo teremos que colocar um atributo chamado <mark>enctype="multipart/form-data"</mark>.
+
+</body>
+</html>

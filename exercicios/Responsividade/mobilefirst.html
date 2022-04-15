@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        body{
+            display: flex;
+        }
+        @media(max-width:600px){
+            h1{
+                color: red;
+            }
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            border: 3px solid red;
+        }
+        @media (orientation:landscape){
+            body{
+                flex-direction: row;
+            }
+
+        }
+        @media (orientation:portrait){
+            body{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsividade</h1>
+    <h2>O que significa o conceito Mobile First no HTML&CSS?</h2>
+    <mark>Na hora da criação da página, o programador deve focar primeiramente no desenvolvimento responsivo para celulares;</mark>
+    <h1>Layout adaptativo vs layout responsivo.</h1>
+    <mark>layout adaptativo</mark>= esse layout foi pensando para ir diminuindo e se adapitando de acordo com o tamanho da tela.<br><br>
+    <mark>layout responsivo</mark>= Página que se adapta a qualquer tamanho de dispositivo. Ou seja, os elementos serão organizados do menor ao maior tamanho;<br>vai se flexibilizando  ao tamanho especifico.<br>
+    tamanho dos monitores= 320,480, 760, 960,1200,1600.<br><br>
+    <h1>viewport</h1>
+    <h2>Na propriedade viewport, utilizada no HTML, temos a propriedade user-scalable, definida como no, por padrão. Para qual finalidade essa propriedade é utilizada?</h2>
+    <mark>Para impedir o(a) usuário(a) de dar zoom em alguma imagem.</mark>
+    <h1>Imagens Responsivas</h1>
+    <mark>picture</mark>= A tag picture, junto com a tag source, auxilia na responsividade das imagens.<br>
+    <mark>source</mark>= media="(min-width:650px)" srcset="img.jpg"/><br>
+    <mark>source</mark>= media="(min-width:450px)" srcset=img3.jpg/>
+    <picture>
+        <source media="(min-width:650px)" srcset="https://via.placeholder.com/600x400/a0f/fff"/>
+        <source media="(min-width:450px)" srcset="https://via.placeholder.com/600x400/b70/fff"/>
+        <img src="https://via.placeholder.com/600x400/38f/fff"/>
+    </picture>
+    <h2>Quais tags específicas são utilizadas para manipular a responsividade de imagens em uma página?</h2>
+    <mark>picture, source, img;</mark>
+    <h1>Imagem responsiva:Propriedade object-fit</h1>
+    <h2>Qual o objetivo da propriedade Object-fit no css?</h2>
+    <mark>Deixar a imagem redimensionada dependendo de qualquer tamanho que set nela</mark><br>
+    <mark>Object-fit</mark>= fill, contain, cover,none, scale-down;
+    <h1>Css @media</h1>
+    @media<mark>(max-width:600px)</mark>{
+        background-color:#red;
+    }
+    <h1>seja bemvindo ao meu site</h1>
+    <h2>Para que é usado o item @media no CSS ?</h2>
+    <mark>Para alterar as propriedades dos elementos de acordo com a resolução, na qual, a página está.</mark>
+    @media only print , screen{
+        somente para quando for imprir...
+
+    }
+    <h2>O que deve ser definido no @media para que as alterações sejam realizadas na página?</h2>
+    <mark>O tamanho da resolução mínima e máxima para realizar a alteração;</mark>
+    <h2>Um recurso que poucas pessoas sabem é que o media query deixa, além de acessível para qualquer dispositivo a sua aplicação, ele também:</h2>
+<mark>Auxilia na impressão da página de sua aplicação, caso necessário.</mark>
+
+<h1>Orientation no @media</h1>
+<mark>@media(orientation: landscape)</mark>{{predominantimente horizontal.<br>
+<mark> @media(orientation: portrait)</mark> marjoritariamente na vertival<br>
+
+o @media não trabalha com o posição real do celular.<br>
+trabalha com a proporção de tela.
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<h1>Qual a função da propriedade Orientation no @media do CSS?</h1>
+<mark>Verificar se a tela está horizontal ou vertical</mark>
+<h1>Aspect-ratio</h1>
+<mark>O aspect-ratio, em outras palavras, serve para realizarmos “testes” de responsividade na propriedade:</mark>
+<h1>viewport</h1>
+<mark>O aspect-radio é usado para mudar as propriedades de acordo com a escala de tamanho do navegador que o usuário está acessando a página;</mark>
+<h1>Função var</h1>
+
+:root{
+    --bg-color:preto;
+    --bg-second:cinza;
+    --font-color:branca;<br>
+    colocar dentro do seu elemento e todo documento.<br>
+}
+<mark>Seguindo o código abaixo, temos uma variável em um arquivo ccs:
+
+    :root {
+    
+    --font-color: #FFF;
+    
+    }
+    
+    Qual das alternativas a seguir apresenta a forma correta de usar essa váriável em um elemento que</mark><br>
+    h1 { color: var(--font-color); }
+<h1>Função var em media query</h1>
+<h2>Qual a maneira correta de modificar uma variável de acodo com o media query no css ?</h2>
+<mark>Iniciamos um novo :root dentro do @media e colocamos a variável e o valor de acordo com o que queremos para aquele @media;</mark>
+@media (max-width:450px)<br>
+:root{
+    --font-size15px.
+}<br>
+somente trocar a variavel.
+<h1>hack css: Altura relativa a largura</h1>
+<h2>Qual propriedade do css alteramos para deixar a altura relativa a largura de um elemento?</h2>
+<mark>padding;</mark>
+<h1>Funções min e max</h1>
+<mark>1.Auxilia na responsividade da aplicação, estabelecendo limites de largura e altura no conteúdo.<br>
+    2.Ela pode controlar o tamanho de imagens e fontes, como elas irão aparecer.<br>
+    3.Ela pode controlar o tamanho de um input em um formulário.<br>
+    </mark><br>
+width:max(50%, 300px)<br>
+width:min(50%, 300px)<br>
+<h1>função calc</h1>
+<h2>A função calc no CSS permite que sejam feitos:</h2>
+<mark>Cálculos que envolvam a altura e a largura de determinado item da aplicação.</mark><br>
+<mark>Calcula os espaços exatos nos elementos para aplicar na página e deixar padrão e responsiva;</mark>
+width:calc(100%-20px)
+
+</body>
+</html>

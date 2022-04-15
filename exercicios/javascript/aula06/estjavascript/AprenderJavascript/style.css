@@ -1,0 +1,31 @@
+
+/*
+.exemplo{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+
+}
+
+.verde{
+background-color: green;
+}
+.vermelho{
+background-color: red;
+}
+.azul{
+background-color: blue;
+}
+*/
+
+
+.preto{
+    background-color: black;
+    color: white;
+}
+.verde{
+    background-color:#00ff00 ;
+    color: black;
+}

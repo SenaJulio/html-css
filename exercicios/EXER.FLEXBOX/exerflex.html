@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreinarFlexBox</title>
+    <style>
+        body{
+         margin:0;
+         padding: 0;
+        }
+        .container{
+            display: flex;
+           flex-flow: row wrap;
+           justify-content: space-around;
+            background-color: black;
+            height: 761px;
+            margin-top: 30px;
+            
+        }
+        .foto{
+            background-color: red;
+            flex:2;
+            align-self: flex-end;
+            width: 50px;
+            height: 50px;
+        }
+        .foto1{
+            background-color: green;
+        flex-grow: 1;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+        }
+        nav{
+            display: flex;
+            align-items: flex-end;
+      
+        }
+        nav ul{
+        display: flex;
+        flex-direction: column;
+
+
+        }
+        nav a{
+            display: block;
+   color: white;
+    text-decoration: none;
+    padding: 10px;
+        }
+        nav a:hover{
+            background-color: red;
+        }
+        .balao {
+            background-color: #0000ff;
+            display:inline-block;
+            color: white;
+            padding: 20px;
+            border-radius: 20px;
+
+        }
+        .balao::after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10x;
+           
+            background-color: yellow;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="balao">Olá, Tuydo bem?</div>
+    <div class="container">
+        <div class="foto"></div>
+        <div class="foto1"></div>
+        
+        <nav>
+            <ul>
+                <li><a href="home">home</a></li>
+                <li><a href="sobre">sobre</a></li>
+                <li><a href="produtos">produtos</a></li>
+                <li><a href="cadastros">cadastros</a></li>
+            </ul>
+        </nav>
+    </div>
+  
+</body>
+</html>

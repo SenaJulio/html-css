@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+ .container,.container2{
+     display:flex;
+     flex-direction: row-reverse;
+     background-color: #666;
+ }
+ 
+     
+ 
+
+ .container div,
+ .container2 div{
+     flex: 1;
+     background-color: red;
+     padding: 10px;
+     margin: 10px;
+     font-size: 18px;
+     color: white;
+ }
+ p{
+     color: red;
+ }
+ #geral{
+    display: flex;
+    justify-content: center;
+ }
+ section{
+     flex: 2;
+ }
+ aside{
+     flex: 1;
+ }
+ .Blocks{
+     display:flex;
+     flex-wrap:wrap;
+     justify-content:space-between;
+ }
+ .block{
+     width: 150px;
+     height: 150px;
+     margin-right: 10px;
+     margin-top: 20px;
+     background-color: #36aa1e;
+ }
+ form{
+     width: 180px;
+     height: 190px;
+     background:linear-gradient(90deg,red,blue,white,black);
+     padding: 20px;
+     justify-content: center;
+     margin:auto;
+     margin-top: 20px;
+
+     
+ }
+ input{
+     padding: 10px;
+     display: flex;
+     
+ }
+
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    forma diferente de criar a estrutura do seu layout.<br>
+    vai tornar todas suas divs flexiveis<br>
+    <div class="container">
+ <div>1</div>
+ <div>2</div>
+ <div>3</div>
+ </div>
+ O flebox é utilizado para :<br>
+ criação e organização da estrutura do site;<br>
+ Qual das alternativas a seguir melhor define o Flexbox ?<br>
+ Layout que permite que os elementos responsivos, dentro de um contêiner, sejam organizados automaticamente.<br>
+    display=block<br>
+    display=inline<br>
+    display=none<br>
+    display=inlineblock<br>
+    flex-direction=row.<br>
+    flex-direction=column.<br>
+    flex-direction=row-reverse.<br>
+    flex-direction=column-reverse.<br>
+    flex:1: se refere o tamanho dos itens.<br>
+    <p>Podemos ter varios container em nosso site</p>
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+    </div>
+    <h1>alinahmento dos itens</h1>
+    justify-content:center; é colocada dentro do container. alinha na linha horizontalmente, na direção que está sendo exibida.<br>
+    justify-content:flex-start; é colocada dentro do container.<br>
+    justify-content:flex-end; é colocada dentro do container.<br>
+    justify-content:space-around; é colocada dentro do container.<br>
+    justify-content:space-between; é colocada dentro do container.<br>
+    align-items:center; alinha na coluna verticalmente,na direção contraria que está sendo exibida.<br>
+    <mark>Todos propriedades colocadas no justify-content acima se aplica ao align-items.</mark><br>
+
+    flex-wrap:wrap<br>
+    flex-wrap:nowrap<br>
+    flex-flow:row wrap;<br>
+    flex-flow:colun wrap;<br>
+    <mark>
+        flex-direction:row;
+        justify-content:center;
+        align-items;center;
+
+    </mark><br><br>
+    pode colocar uma propriedade especifica em qualquer uma das divs que queira subescrever.<br>
+    align-self: flex-start; alinhe ele mesmo.<br>
+    para ordenar os items:
+    <h2>order:1; order:2;</h2>
+    o order:0; já é o padrão.<br>
+    fle-wrap:wrap;<br>para colocar o alinhamento para todo o conteudo.<br>
+    align-content:flex-end;<br>
+    align-content:flex-start;<br>
+    align-content:center;<br>
+    align-content:space-between;<br>
+    align-content:space-around;<br>
+    <section id=geral>
+    <section>
+
+    </section>
+    <aside>
+        <div class="Blocks">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+       
+        </div>
+    </aside>
+    </section>
+    <form method="post">
+        Usuário:<br>
+        <input type="email" name="email"><br>
+
+     Senha:<br>
+     <input type="password" name="senha"><br>
+      
+     <input type="submit" name="submit">
+    </form>
+    <h1>Bom dia para todos</h1>
+    <h2>Um excelente dia para os trabalhadores dessa maravilhosa empresa</h2>
+</body>
+</html>

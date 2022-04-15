@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercicio</title>
+        <style>
+            fieldset{
+                width: 300px;
+                height: 600px;
+            }
+            table{
+                border: 1px solid red ;
+            }
+            td{
+                border: 5px solid blue;
+            }
+            .menu{
+                display: flex;
+                align-items: center;
+            }
+            nav ul,
+            nav li{
+             list-style: none;
+             margin: 0;
+             padding: 0;
+            }
+            nav ul{
+                display: flex;
+            }
+            nav a{
+                display: block;
+                padding: 15px;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #727272;
+                font-family: arial;
+                
+             }
+             nav .active a,
+             nav a:hover{
+                 background-color: chartreuse;
+                 color: crimson;
+             }
+             .container{
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 
+
+             }
+             .balao{
+                 display: flex;
+                 float: inline-start;
+                 background-color: #000fff;
+                 display: inline-block;
+                 color: white;
+                 padding: 20px;
+                 border-radius: 20px;
+                 
+             }
+             .balao::after{
+                 content: '';
+                 display: block;
+                 width: 20px;
+                 height: 20px;
+                 position: absolute;
+                 margin-top: 20px;
+                 padding: 10px;
+                 border: 20px solid;
+                 border-color:#000fff transparent transparent transparent; 
+                 
+             }
+             
+        </style>
+    </head>
+    <body>
+        <form method="get">
+            
+            <fieldset>
+                <legend>CONTATO</legend>
+            Usuário:<br>
+            <input type="text" name="text" placeholder="usuário"><br>
+            senha:<br>
+            <input type="number" name="number">
+        </legend>
+        </fieldset>
+    
+        </form>
+        <table>
+            <tr>
+                <th>senha</th>
+                <th>senha</th>
+                <th>senha</th>
+            </tr>
+            <tr>
+                <td>banco</td>
+                <td>email</td>
+                <td>facebook</td>
+            </tr>
+            <tr>
+                <td>banco</td>
+                <td>email</td>
+                <td>facebook</td>
+            </tr>
+            <tr>
+                <td>banco</td>
+                <td>email</td>
+                <td>facebook</td>
+            </tr>
+        </table>
+
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li class="active"><a href="">HOME</a></li>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">HOME</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav>
+         <ul>
+             <li><a href="">Home</a></li>
+             <li><a href="">home</a></li>
+             <li><a href="">home</a></li>
+             <li><a href="">Home</a></li>
+         </ul>
+
+        </nav>
+        <div class="container">
+        <div class="balao">Olá, Tudo bem?</div>
+    </div>
+    </body>
+</html>

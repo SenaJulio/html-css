@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantica</title>
+    <style>
+        body{
+           margin: 30px;
+        }
+    .quadrado{
+        width: 500px;
+        height: 200px;
+        background-color: blue;
+        background:linear-gradient(90deg,red,black,yellow);
+    }
+    p{
+        color: red;
+        padding: 0;
+        margin: 0;
+    }
+    @keyframes animacao{
+        0% {background-color:red;}
+        25% {background-color:yellow;right:200px;}
+        50% {background-color:forestgreen;}
+        75% {background-color:black;}
+        100% {background-color:red;}
+    }
+    .animacao{
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+        position: absolute;
+        animation-name: animacao;
+        animation-duration:4s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+
+    }
+    .sombra{
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+        box-shadow: 10px 10px 5px #ccc;
+    }
+    .transicao{
+     width: 150px;
+     height: 150px;
+     background-color: green;
+     transition: all 2s linear;
+    }
+    .transicao:hover{
+        width: 300px;
+        background-color: yellow;
+    }
+    a{
+       color: red;
+        transition: all 3s linear;
+    }
+    a:hover{
+        color: black;
+    }
+    figure{
+     border: 2px solid #666;
+     margin: 0;
+    }
+    figcaption{
+        background-color: #000;
+        color: white;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <h1>header, footer e navi</h1>
+    <h2>Cada tag vai especificar o conteúdo de cada parte do site, como: cabeçalho, menu, rodapé;</h2>
+    <mark>header</mark> = cabeçalho com h1, p , informaçoes iniciais. de introdução da pagina<br>
+    <mark>navi</mark> = indica onde está o menu principal para leitura especial para deficiente visual, pode colocar link etc<br>
+    <mark>footer</mark> = rodapé do site<br>
+    consegue colocar efeito css nelas.<br>
+    <mark>section</mark>= pode colocar varios locais da pagina. separa por assunto..<br><br>
+    <mark>article</mark> onde fica o conteudo principal do site<br><br>
+    <mark>aside</mark> onde fica conteudo segundario da pagina<br><br>
+    <mark>time</mark> ajuda o motor de busca a indexar mais conteudo .. time datetime= 1600-01-01.<br><br>
+<H2>NOVOS TIPOS DE INPUT</H2>
+<MARk>type=seach  name=search</MARk><br><br>
+<mark>type= email name=email required</mark><br><br>
+<mark>type= url name=url</mark><br><br>
+<mark>type= tel  name=tel</mark><br><br>
+<mark>type= submit  value=enviar</mark><br><br>
+<mark>type=number  name=numero</mark><br><br>
+<mark>type= range  min=1 max=100  um slider</mark><br><br>
+<mark>type=date  name=date</mark><br><br>
+<mark>type= month name=month</mark><br><br>
+<mark>type= week  name=week</mark><br><br>
+<mark>type= time</mark><br><br>
+<mark>type= date-time-local  name=date-time-local</mark><br><br>
+<mark> type=color name=color</mark><br><br>
+<h2>Guarda informação no proprio Html5</h2>
+<mark>div data-nome=julio data-sobrenome=sena</mark>
+<h2>Tag video  width="320" height=240</h2>
+<mark>source src="endereço do video" type=video/mp4</mark>
+<mark>controls, autoplay</mark>
+<h2>Tag audio</h2>
+<mark>source src=som.mp3 type=audio/mpeg</mark>
+<mark> Atributos=controls,autoplay,loop, preload</mark>
+<h2>Placeholder</h2>
+<mark>um texto que põe no html5 que prevê o que vai ter naquele campo.. </mark><br><br>
+<mark>Atributo que serve para indicar ao navegador o texto que vai aparecer em um input;</mark>
+<h2>Autofocus</h2>
+<mark>Ao acessar um formulário, desejamos que o primeiro campo dele esteja automaticamente com o cursor nele, facilitando o preenchimento do usuário. Qual atributo devo utilizar para isso, no meu primeiro input do formulário?</mark>
+<h2>Size maxlenth</h2>
+<mark>size= serve para limitar a quantidade de caracteres no input via html5</mark><br><br>
+<mark>maxlength= Em meu sistema, para o usuário entrar nele, ele precisa entrar com uma senha que tenha, no máximo, 7 dígitos. Assinale a alternativa correta:</mark>Para isso, devemos utilizar o atributo max-length.<br><br>
+<h2>Required Input</h2>
+<mark>Qual a função do atributo Required em um input no HTML 5 ?</mark><br><br>
+Fazer com que o input seja obrigatório para o envio de dados em um formulário;<br><br>
+<h2>AutoComplete</h2>
+<mark>Para utilizarmos um recurso similar ao das pesquisas dos motores de busca, como o Google, de dar sugestões de pesquisa ao usuário enquanto ele está digitando o que deseja buscar, devemos utilizar o:</mark>autocomplete.<br><br>
+<h2>Bordas arredondadas</h2>
+<mark>border-radius= border-top-left-radius,border-top-right-radius,border-bottom-left-radius,border-bottom-right-radius</mark><br><br>
+<h1>DEGRADÊ</h1>
+<div class="exemplo"></div>
+<div class="exemplo"></div>
+<mark>background:linear-gradient(-75deg,white,blue,red)</mark><br><br>
+background:-moz-linear-gradient(white, blue)<br><br>
+background:-o-linear-gradient(white, blue)<br><br>
+background:-webkit-linear-gradient(white, blue)<br><br>
+<mark>Direção é só colocar graus dentro da cor, ex: -75deg.</mark>
+<div class="quadrado"></div>
+<h2>O degradê, no CSS, é utilizado com qual propriedade no CSS?</h2><mark>linear-gradient.</mar>
+    <h1>Animações<h1>
+        <h2>Qual o comando no css para iniciar frames no elemento para criar uma animação ?<h2>
+<mark>@keyrames<mark>
+    <h2>Qual a propriedade usada para setar a duração de uma animação?</h2>
+    <mark>animation-duration</mark><br><br>
+    1. crie as animações, os frames, criando os quadros.<br><br>
+    @keyframes exemplo{<br>
+        0% {background-color:red;<p>top:0;left:0</p>}<br>
+        25%{bacground-color:yellow;<p>top:0;left:200</p>}<br>
+        50%{bacground-color:blue;<p>top:200;left:200</p>}<br>
+        75%{background-color:green;<p>top:200;left:200;</p>}<br>
+        100%{background-color:red;<p>top:0;left:0;</p>}<br>
+    }<br>
+    2.crie agora no Css os estilos.<br><br>
+    .exemplo{<br>
+        width:150px;<br>
+        height:150px;<br>
+        background-color-green;<br>
+        position:absolute;(para que fique flutuante)<br>
+        animation-name:exemplo;<br>
+        animation-duration:4s;<br>
+        animation-delay:2s;<br>
+        animation-iteration-count:infinete;
+    }<br><br>
+    <div class="animacao"></div><br><br><br><br>
+
+<h1>sombras</h1>
+<marK>box-shadow= aplica sombra em elementos:</marK>são quatro valores <br><br>
+<mark>text-shadow= aplica sombra em texto:</mark>são quatro valores também.<br><br>
+
+<div class="sombra"></div>
+
+<h1>Transições</h1>
+transition: all 1s linear;
+.sombra:hover;
+width:300px;<br><br>
+<div class="transicao"></div><br><br>
+<mark>Qual o principal motivo do uso da propriedade transition no CSS ?</mark><br>
+Fazer com que todas as mudanças de estilo da página seja de forma clean;<br><br>
+ <a href="">clique aqui</a><br><br>
+ As transições permitem que a forma de um elemento seja aumentado ou diminuído, conforme necessidade.<h1>Webkit<h1>
+     <mark>Qual o significado do webkit?</mark>
+     Uma estrutura responsável por desenhar o HTML e o CSS na tela, de acordo com o navegador.
+     <h1>Wordwrap</h1>
+     <mark>O que é o wordwrap ?</mark>
+     propriedade do css que faz com que o desenvolvedor possa quebrar linhas;
+     word-wap:break-word;<br><br>
+     Caso o texto que uma determinada div possua estoure o comprimento dela, pelo tamanho do texto, que propriedade no CSS podemos utilizar para consertar isso?<Br>
+        word-wrap: break-word.
+
+        <h1>meta tag (Social sharing)</h1>
+        Os meta tags trabalham lado a lado na qualidade da página em relação:<br>
+        ao marketing digital do sistema/site;<br><br>
+        coloca dentro do head=<br>
+        head  
+        meta charset="utf-8"
+        meta property="og:url" content=endereço do site<br>
+        meta property="og:type" content=article<br>
+        meta property="og:title" content=titulo do nosso artigo<br>
+        meta property="og:description" content= descrição qualquer do nosso artigo<br>
+        meta property="og:image" content=endereço da imagem 1200 x 630<br>
+        meta property="og:url" content=<br>
+        head  
+
+        <h1>Listas de descrição</h1>
+        dl <br>
+        dt café dt =titulo<br>
+        dd <br>
+        ul <br>
+        li cor: Preto <br>
+        li temperatura: Quente<br>
+        ul <br>
+        dd <br>
+         
+        dl <br>
+        Se tratando de HTML semântico, quais tags são usadas em listas com descrição de itens?
+        dl, dt e  /dd
+        <h1>Citações</h1>
+Para citações pequenas usamos a TAG "q"<br>
+para citações grandes usamos  a Tag "bloquote."<br>
+Qual das alternativas a seguir contém tags usadas para citações no HTML semântico?<br>
+q e blockquote;
+
+ <h1>Tag Main</h1>
+ Só pode ter uma tag Main na pagina inteira.<br>
+ dento do Main se coloca as section.<br>
+ Qual um dos grandes diferenciais da Tag main no HTML 5?<br>
+ <p>Especifica o conteúdo principal da página e só pode colocar uma vez no código;</p><br>
+ <h1>Tag Address</h1>
+ area de informações de contato . <br>
+ pode ter mais de uma Tag na pagina.<br>
+ colocada geralmente dentro de footer<br>
+ A tag <P>address</P> é utilizada para dizer aos motores de busca que a área delimitada por ela é para:<br>
+    Informações de contato do desenvolvedor(a) ou da empresa desenvolvedora.
+    <h1>Tag Figure</h1>
+    colocar uma legenda em uma foto.<br>
+    Para que é usada a Tag Figure?<br>
+    Usada para colocar imagens e também legendas em, geralmente, conteúdos de blogs;<br>
+    a legenda é colocada dentro da Tag figcaption.<br>
+ <figure>
+    <img src="https://www.google.com.br/google.jpg">
+    <figcaption>Logo do google</figcaption>
+</figure>
+
+
+</body>
+</html>
