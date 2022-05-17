@@ -10,7 +10,7 @@
 /* ELEMENTOS BASICOS*/
 body{
    background: var(--preto);
-   font-family: 'Times New Roman', Times, serif;
+   font-family: 'Arial', Times, serif;
    color: white;
 }
 header .container{
@@ -36,7 +36,7 @@ header nav a:hover{
 /*filme principal*/
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('/img/house of cards.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('../img/house of cards.jpg');
 
     height: 600px;
     background-size:cover;
@@ -75,3 +75,18 @@ margin-bottom: 40px;
 .botao i{
     margin-right: 5px;
 }
+.container{
+    margin-left: 20px;
+}
+.filme-principal .container{
+    width: 70%;
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
